@@ -7,11 +7,11 @@ import lejos.hardware.sensor.SensorMode;
 public class Sonic {
 
 	// 超音波センサーのポート設定
-	static EV3UltrasonicSensor sonicSensor = new EV3UltrasonicSensor(SensorPort.S3);
+	private static EV3UltrasonicSensor sonicSensor = new EV3UltrasonicSensor(SensorPort.S3);
 
 	// 超音波センサーに必要な定義
-	static SensorMode sonic = sonicSensor.getMode(0);
-	static float sonicValue[] = new float[sonic.sampleSize()];
+	private static SensorMode sonic = sonicSensor.getMode(0);
+	private float sonicValue[] = new float[sonic.sampleSize()];
 
 	/*
      * 関数名	:getSonicValue

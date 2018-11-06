@@ -7,15 +7,15 @@ import lejos.robotics.RegulatedMotor;
 abstract public class LineTrace {
 
 	// モーターのポート設定
-	static RegulatedMotor leftMotor  = Motor.C;
-	static RegulatedMotor rightMotor = Motor.B;
+	protected static RegulatedMotor leftMotor  = Motor.C;
+	protected static RegulatedMotor rightMotor = Motor.B;
 
 	// その他パラメータ
-	protected static int madSpeed;		// モータースピードの倍率
-	protected static float colorWhite;	// 白色の値を格納する変数
-	protected static float colorBlack;	// 黒色の値を格納する変数
-	static Color color = new Color();
-	static Sonic sonic = new Sonic();
+	protected static int madSpeed;				// モータースピードの倍率
+	protected static float colorWhite;			// 白色の値を格納する変数
+	protected static float colorBlack;			// 黒色の値を格納する変数
+	protected static Color color = new Color();
+	protected static Sonic sonic = new Sonic();
 
 	LineTrace(int madSpeed) {
 		LineTrace.madSpeed = madSpeed;

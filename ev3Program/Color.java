@@ -7,13 +7,13 @@ import lejos.hardware.sensor.SensorMode;
 public class Color {
 
 	// カラーセンサーのポート設定
-	static EV3ColorSensor colorSensor = new EV3ColorSensor(SensorPort.S2);
+	private static EV3ColorSensor colorSensor = new EV3ColorSensor(SensorPort.S2);
 
 	// カラーセンサーに必要な定義
-    static SensorMode intensityOfRed = colorSensor.getMode(1);
-    static SensorMode colorID = colorSensor.getMode(0);
-	static float intensityOfRedValue[] = new float[intensityOfRed.sampleSize()];
-	static float colorIDValue[] = new float[colorID.sampleSize()];
+    private static SensorMode intensityOfRed = colorSensor.getMode(1);
+    private static SensorMode colorID = colorSensor.getMode(0);
+	private float intensityOfRedValue[] = new float[intensityOfRed.sampleSize()];
+	private float colorIDValue[] = new float[colorID.sampleSize()];
 
 	/*
      * 関数名	:getIntensityOfRed
