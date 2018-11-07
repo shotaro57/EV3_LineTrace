@@ -17,7 +17,13 @@ abstract public class LineTrace {
 	protected static Color color = new Color();
 	protected static Sonic sonic = new Sonic();
 
-	LineTrace(int madSpeed) {
+	/*
+     * 関数名	:LineTrace
+     * 引数		:int
+     * 戻り値	:void
+     * 			:コンストラクタ。madSpeedを初期化する。
+     */
+	public LineTrace(int madSpeed) {
 		LineTrace.madSpeed = madSpeed;
 	}
 
